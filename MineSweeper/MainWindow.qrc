@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/Image">
+        <file>Resources/images/block_35_490.bmp</file>
+        <file>Resources/images/block_old_35_490.bmp</file>
+        <file>Resources/images/digital_32_300.bmp</file>
+        <file>Resources/images/emoji_31_93.bmp</file>
+    </qresource>
+</RCC>
