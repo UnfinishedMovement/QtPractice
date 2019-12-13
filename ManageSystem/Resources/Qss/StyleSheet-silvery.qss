@@ -1,0 +1,309 @@
+﻿/* QWidget */
+QWidget {
+    background: rgb(232, 241, 252);
+}
+
+/* QMenuBar */
+QMenuBar {
+    background: rgb(187, 212, 238);
+    border-top: 1px solid rgb(111, 156, 207);
+	border-bottom: 1px solid rgb(111, 156, 207);
+}
+
+QMenuBar::item {
+    border: 1px solid transparent;
+    padding: 5px 10px 5px 10px;
+    background: transparent;
+}
+
+QMenuBar::item:enabled {
+    color: rgb(2, 65, 132);
+}
+
+QMenuBar:item:selected {
+    border-top-color: rgb(198, 224, 252);
+    border-bottom-color: rgb(198, 224, 252);
+    background: rgb(198, 224, 252);
+}
+
+/* QMenu */
+QMenu {
+    border: 1px solid rgb(111, 156, 207);
+    background: rgb(187, 212, 238);
+}
+
+QMenu::item:enabled:selected {
+    color: rgb(2, 65, 132);
+    background: rgb(255, 255, 255);
+}
+
+/* QHeaderView */
+QHeaderView{
+    border-bottom: 3px solid rgb(0, 78, 161);
+    background: transparent;
+    min-height: 30px;
+}
+
+QHeaderView::section {
+    color: rgb(2, 65, 132);
+    background: transparent;
+}
+
+QHeaderView::section:horizontal:hover {
+    background: rgb(83, 149, 219);
+}
+
+/* QTreeView */
+QTreeView {
+    min-width: 220px;
+}
+
+QTreeView::item {
+	color: black;
+}
+
+/* QTableView */
+QTableView {
+    border: 1px solid rgb(111, 156, 207);
+    background: rgb(224, 238, 255);
+    gridline-color: rgb(111, 156, 207);
+}
+
+QTableView::item {
+	color: black;
+    border: none;
+    background: white;
+}
+
+QTableView::item:selected {
+    color: rgb(255, 106, 0);
+    background: rgba(255, 255, 255, 100);
+}
+
+/* QScrollBar Horizontal*/
+QScrollBar:horizontal {
+        height: 20px;
+        background: transparent;
+        margin-top: 3px;
+        margin-bottom: 3px;
+}
+QScrollBar::handle:horizontal {
+        height: 20px;
+        min-width: 30px;
+        background: rgb(170, 200, 230);
+        margin-left: 15px;
+        margin-right: 15px;
+}
+QScrollBar::handle:horizontal:hover {
+        background: rgb(165, 195, 225);
+}
+QScrollBar::sub-line:horizontal {
+        width: 15px;
+        background: transparent;
+        image: url(:/Image/Resources/Image/left-arrow-silvery.png);
+        subcontrol-position: left;
+}
+QScrollBar::add-line:horizontal {
+        width: 15px;
+        background: transparent;
+        image: url(:/Image/Resources/Image/right-arrow-silvery.png);
+        subcontrol-position: right;
+}
+QScrollBar::sub-line:horizontal:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-line:horizontal:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal {
+        background: transparent;
+}
+
+/* QScrollBar Vertical*/
+QScrollBar:vertical {
+        width: 20px;
+        background: transparent;
+        margin-left: 3px;
+        margin-right: 3px;
+}
+QScrollBar::handle:vertical {
+        width: 20px;
+        min-height: 30px;
+        background: rgb(170, 200, 230);
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+QScrollBar::handle:vertical:hover {
+        background: rgb(165, 195, 225);
+}
+QScrollBar::sub-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(:/Image/Resources/Image/top-arrow-silvery.png);
+        subcontrol-position: top;
+}
+QScrollBar::add-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(:/Image/Resources/Image/down-arrow-silvery.png);
+        subcontrol-position: bottom;
+}
+QScrollBar::sub-line:vertical:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-line:vertical:hover {
+        background: rgb(170, 200, 230);
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: transparent;
+}
+
+/* QComboBox */
+QComboBox {
+	color: black;
+    border-radius: 4px;
+    border: 1px solid rgb(111, 156, 207);
+    background: white;
+}
+
+QComboBox::drop-down {
+    border: none;
+    background: transparent;
+	image: url(:/Image/Resources/Image/down-arrow-silvery.png);
+}
+
+QComboBox::drop-down:hover {
+    background: rgba(40, 130, 220, 30);
+}
+
+QComboBox::drop-down:pressed {
+    background: rgb(0, 78, 161);
+}
+
+QComboBox::down-arrow {
+    image: url(:/Image/Resources/Image/down-arrow-silvery.png);
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid rgb(111, 156, 207);
+    background: white;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    color: rgb(2, 65, 132);
+	background: rgb(232, 241, 250);   
+}
+
+QComboBox#comboBoxFilter {
+    height: 25px;
+    width: 60px;
+}
+
+/* QLineEdit */
+QLineEdit {
+	color: black;
+    border-radius: 4px;
+    border: 1px solid rgb(111, 156, 207);
+    background: white;
+}
+
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+    color: rgb(51, 51, 51);
+}
+
+QLineEdit#lineEditSearch {
+    height: 25px;
+}
+
+/* QTextEdit */
+QTextEdit {
+	color: black;
+    border-radius: 4px;
+    border: 1px solid rgb(111, 156, 207);
+    background: white;
+}
+
+/* QLabel */
+QLabel {
+    color: black;
+}
+
+QLabel#labelJobNumber, QLabel#labelName, QLabel#labelGender, QLabel#labelAge, QLabel#labelID, QLabel#labelEducation, QLabel#labelSalary, QLabel#labelMobile, QLabel#labelDepartment, QLabel#labelMajor, QLabel#labelTitle { 
+    min-width: 110px;
+    max-width: 110px;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+QLabel#labelMemo {
+    min-width: 110px;
+    max-width: 110px;
+    min-height: 320px;
+    max-height: 320px;
+}
+
+QLabel#labelTitleFilter {
+    min-width: 60px;
+}
+
+QLabel#labelKey {
+    min-width: 45px;
+}
+
+/* QPushButton */
+QPushButton {
+    color: white;
+    width: 75px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid rgb(111, 156, 207);
+    background: rgb(120, 170, 220);
+}
+
+QPushButton:enabled:hover {
+    background: rgb(40, 130, 220);
+}
+
+QPushButton:enabled:pressed {
+    background: rgb(0, 78, 161);
+}
+
+QPushButton#pushButtonMinimized {
+	width: 25px;
+    height: 25px;
+	border: none;
+	margin-right: 10px;
+	background: none;
+	image: url(:/Image/Resources/Image/button-min.png);
+}
+
+QPushButton#pushButtonMaximized {
+	width: 25px;
+    height: 25px;
+	border: none;
+	margin-right: 10px;
+	background: none;
+	image: url(:/Image/Resources/Image/button-max.png);
+}
+
+QPushButton#pushButtonExit {
+	width: 25px;
+    height: 25px;
+	border: none;
+	margin-right: 10px;
+	background: none;
+	image: url(:/Image/Resources/Image/button-exit.png);
+}
+
+QPushButton::menu-indicator#pushButtonSkin {
+	image: none;
+}
+
+QPushButton#pushButtonSkin {
+	width: 25px;
+    height: 25px;
+	border: none;
+	margin-right: 10px;
+	background: none;
+	image: url(:/Image/Resources/Image/button-skin.png);
+}

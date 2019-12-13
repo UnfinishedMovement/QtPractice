@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/Qss">
+        <file>Resources/Qss/StyleSheet-black.qss</file>
+        <file>Resources/Qss/StyleSheet-silvery.qss</file>
+    </qresource>
+    <qresource prefix="/Image">
+        <file>Resources/Image/down-arrow-silvery.png</file>
+        <file>Resources/Image/button-exit.png</file>
+        <file>Resources/Image/button-max.png</file>
+        <file>Resources/Image/button-min.png</file>
+        <file>Resources/Image/button-skin.png</file>
+        <file>Resources/Image/left-arrow-silvery.png</file>
+        <file>Resources/Image/right-arrow-silvery.png</file>
+        <file>Resources/Image/top-arrow-silvery.png</file>
+    </qresource>
+</RCC>

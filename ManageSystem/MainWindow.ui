@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1330</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="1">
+       <widget class="QTableView" name="tableView">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777213</width>
+          <height>16777213</height>
+         </size>
+        </property>
+        <property name="cursor" stdset="0">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayoutTableMenu">
+        <item>
+         <widget class="QLabel" name="labelTitleFilter">
+          <property name="text">
+           <string>职称筛选</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBoxFilter">
+          <item>
+           <property name="text">
+            <string>所有类型</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>教授</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>副教授</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>讲师</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>助教</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>50</width>
+            <height>30</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelKey">
+          <property name="text">
+           <string>关键字</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEditSearch"/>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ButtonSearch">
+          <property name="text">
+           <string>搜索</string>
+          </property>
+          <property name="shortcut">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>400</width>
+            <height>30</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ButtonAdd">
+          <property name="text">
+           <string>添加</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="ButtonDelete">
+          <property name="text">
+           <string>删除</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0" rowspan="2">
+       <widget class="QTreeWidget" name="treeWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>160</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <column>
+         <property name="text">
+          <string>学院/专业</string>
+         </property>
+        </column>
+        <item>
+         <property name="text">
+          <string>全部/全部</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>理学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>应用物理学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>信息与计算科学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>电子信息科学与技术</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>信息与计算科学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>数学与应用数学</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>建筑与城乡规划学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>人文地理与城乡规划</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>建筑学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>城乡规划</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>风景园林</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>建筑设计技术</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>城市规划</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>资源环境与城乡规划管理</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>景观建筑设计</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>土木工程学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>土木工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>城市地下空间工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>材料科学与工程</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>环境与市政工程学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>给排水科学与工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>环境工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>环境科学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>能源与动力工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>建筑环境与能源应用工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>建筑环境与设备工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>给水排水工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>热能与动力工程</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>机械与汽车工程学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>车辆工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>机械设计制造及其自动化</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>交通运输</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>材料成型及控制工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>汽车服务工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>交通工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>安全工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>测控技术与仪器</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>信息与控制工程学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>建筑电气与智能化</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>通信工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>软件工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>计算机科学与技术</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>电子信息工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>自动化</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>网络工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>电气自动化技术</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>电气工程及其自动化</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>电力工程与管理</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>计算机应用技术</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>人文与外国语学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>日语</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>英语</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>汉语言文学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>社会工作</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>广告学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>影视动画</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>朝鲜语</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>德语</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>艺术与设计学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>服装与服饰设计</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>音乐表演</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>服装设计与工程</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>绘画</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>视觉传达设计</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>环境设计</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>产品设计</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>工业设计</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>艺术设计</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>管理工程学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>工程管理</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>房地产开发与管理</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>物流管理</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>信息管理与信息系统</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>工程造价</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>土地资源管理</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>工业工程</string>
+           </property>
+          </item>
+         </item>
+         <item>
+          <property name="text">
+           <string>商学院</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>国际经济与贸易</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>财务管理</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>经济学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>统计学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>电子商务</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>市场营销</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>会计学</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>国际商务</string>
+           </property>
+          </item>
+         </item>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1330</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ManageSystem.qrc"/>
+ </resources>
+ <connections/>
+</ui>
