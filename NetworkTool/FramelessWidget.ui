@@ -53,7 +53,7 @@
       <item>
        <widget class="QLabel" name="labelFramelessTitle">
         <property name="text">
-         <string>Title</string>
+         <string>NetWork Tool</string>
         </property>
        </widget>
       </item>
