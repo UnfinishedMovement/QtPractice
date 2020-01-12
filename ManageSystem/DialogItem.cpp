@@ -36,6 +36,10 @@ DialogItem::DialogItem(ItemData* pItemData, QWidget* parent) :
 	ui->labelTip->setStyleSheet("QLabel{ color:red }");
 	ui->lineEditJobNumber->setFocus();
 
+	QRegExp RegExp("[1-9][0-9]+$");
+	QValidator* Validator = new QRegExpValidator(RegExp, ui->lineEditJobNumber);
+	ui->lineEditJobNumber->setValidator(Validator); //正则表达式限定工号只能输入数字
+
 	if (mItem)
 	{
 		ui->btnAdd->setText("修改");
